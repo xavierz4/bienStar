@@ -1,0 +1,41 @@
+{
+  "name": "fenix-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.3.3"
+  },
+  "overrides": {
+    "react-native-reanimated": "3.16.1",
+    "web-admin": {
+      "react": "19.0.0-rc-66855b96-20241106",
+      "react-dom": "19.0.0-rc-66855b96-20241106"
+    },
+    "next": {
+      "react": "19.0.0-rc-66855b96-20241106",
+      "react-dom": "19.0.0-rc-66855b96-20241106"
+    },
+    "@fenix/ui": {
+      "react": "19.0.0-rc-66855b96-20241106",
+      "react-dom": "19.0.0-rc-66855b96-20241106"
+    },
+    "mobile-app": {
+      "react": "18.3.1",
+      "react-native": "0.76.0-rc.5"
+    }
+  },
+  "packageManager": "npm@10.8.0",
+  "dependencies": {
+    "metro-minify-terser": "^0.83.3"
+  }
+}

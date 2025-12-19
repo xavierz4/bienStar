@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F4F7FE] text-secondary font-sans antialiased;
+    background-image: radial-gradient(circle at 50% 0%, #E9EFFD 0%, #F4F7FE 100%);
+    min-height: 100vh;
+    --surface: 255 255 255;    /* #FFFFFF */
+    --primary: 14 165 233;     /* #0EA5E9 */
+    --secondary: 15 23 42;     /* #0F172A */
+  }
+}
